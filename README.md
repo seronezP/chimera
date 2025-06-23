@@ -20,22 +20,23 @@ To run the launcher, first you need to make sure that you have Python version 3.
 `pip3 install customtkinter minecraft-launcher-lib `
 
 Next you can download this repository and open in any IDE. 
+  
+Lastly, select your Minecraft version, enter your nickname and click “Launch”.
 
-Next you start file "main.py", open "SETTINGS" and change if you need minecraft folder.   
-Last step is select minecraft version, enter your nickname and toogle "Launch".
+If you need to change default folder, open "settings" and enter your path.
 
 ![settings screenshoot](https://github.com/seronezP/chimera/blob/master/src/images/settingsofchimera.png)
 
+If you don't enter any custom minecraft folder path, miecraft will be installed in default folder. 
+
+Default minecraft folders: on MacOs this folder is `users/user/library/Application Support/minecraft`, on windows `users/user/appdata/roaming/minecraft`.
 
 
-p.s - you can enter any folder, but i recommend `.minecraft` folder in this repo.
 ___
 #### IMPORTANT
 ___
 
 _Without entered username minecraft dont start_
-
-_If you dont enter minecraft folder path, miecraft will be installed in repository folder because its default minceraft foler_
 
 _The launcher is still in a very early stage of development and there are many things missing from it_
 
