@@ -1,5 +1,5 @@
 from src.gui.MainWindow import App
-from launch_logic import Launcher
+from src.core.launch_logic import Launcher
 from random import choice
 
 def main():
