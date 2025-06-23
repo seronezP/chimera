@@ -1,5 +1,6 @@
 import customtkinter
 from customtkinter import CTkFrame
+import minecraft_launcher_lib
 from src.gui.SettingsGUI import SettingsGUI
 
 class App:
@@ -8,6 +9,9 @@ class App:
         self.app.title("Chimera Launcher")
         self.app.geometry("600x340")
         self.app.resizable(False, False)
+
+        # Get default Minecraft path
+        self.minecraft_path = minecraft_launcher_lib.utils.get_minecraft_directory()
 
         # main frame of application
         self.main_frame = CTkFrame(master=self.app, width=500, height=300)
@@ -55,15 +59,26 @@ class App:
         self.settings_button.place(x=15, y=300)
 
         # creating settings frame (default: hide)
-        self.settings_gui = SettingsGUI(self.app, self.hide_settings)
+        self.settings_gui = SettingsGUI(
+            self.app,
+            self.hide_settings,
+            self.minecraft_path,
+            width=500,
+            height=300
+        )
         self.settings_gui.place_forget()
 
     # show settings frame func
     def show_settings(self):
+        # Update path before showing
+        self.settings_gui.path_entry.delete(0, customtkinter.END)
+        self.settings_gui.path_entry.insert(0, self.minecraft_path)
         self.settings_gui.place(x=380, y=200, anchor="center")
 
     # hide settings frame func
     def hide_settings(self):
+        # Save new path
+        self.minecraft_path = self.settings_gui.get_minecraft_path()
         self.settings_gui.place_forget()
 
     # set versions in combobox
@@ -73,9 +88,6 @@ class App:
     # get select version
     def get_selected_version(self):
         return self.combobox_var.get()
-
-    def get_minecraft_path(self, path_minecraft):
-        return path_minecraft.get()
 
     # get username
     def get_username(self):

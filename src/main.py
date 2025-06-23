@@ -9,7 +9,7 @@ def main():
     def launch_callback():
         username = app.get_username()
         version_id = app.get_selected_version()
-        minecraft_directory = app.get_minecraft_path()
+        minecraft_directory = app.minecraft_path  # Use path from App
 
         if not username:
             print("Please enter your name")

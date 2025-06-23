@@ -20,10 +20,13 @@ To run the launcher, first you need to make sure that you have Python version 3.
 `pip3 install customtkinter minecraft-launcher-lib `
 
 Next you can download this repository and open in any IDE. 
-Enter path to minecraft directory `MINECRAFT_DIRECTORY=''` in "launch_logic.py" file.
+
+Next you start file "main.py", open "SETTINGS" and change if you need minecraft folder.   
+Last step is select minecraft version, enter your nickname and toogle "Launch".
+
+![settings screenshoot](https://github.com/seronezP/chimera/blob/master/src/images/settingsofchimera.png)
 
 
-Next you start file "main.py" waiting loading launcher select minecraft version, enter your nickname and toogle "Launch".
 
 p.s - you can enter any folder, but i recommend `.minecraft` folder in this repo.
 ___
