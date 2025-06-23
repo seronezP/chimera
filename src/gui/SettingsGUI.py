@@ -1,5 +1,5 @@
 import customtkinter
-from customtkinter import CTkFrame
+from customtkinter import CTkFrame, CTkScrollbar, CTkScrollableFrame
 
 
 class SettingsGUI(CTkFrame):
@@ -13,6 +13,24 @@ class SettingsGUI(CTkFrame):
             text="Settings",
         )
         label.place(relx=0.09, rely=0.09, anchor="center")
+
+        # just a label
+        label = customtkinter.CTkLabel(
+            self,
+            text="Enter your path to minecrfat directory: ",
+        )
+        label.place(relx=0.30, rely=0.23, anchor="center")
+
+
+        # user enter path to minecraft directory
+        path_minecraft = customtkinter.CTkEntry(
+            self,
+            placeholder_text="Your path",
+            width=300,
+            height=30
+        )
+        path_minecraft.place(x=180, y=100, anchor="center")
+
 
         # close settings button
         button_ok = customtkinter.CTkButton(

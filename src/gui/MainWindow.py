@@ -74,6 +74,9 @@ class App:
     def get_selected_version(self):
         return self.combobox_var.get()
 
+    def get_minecraft_path(self, path_minecraft):
+        return path_minecraft.get()
+
     # get username
     def get_username(self):
         return self.entry_1.get().strip()

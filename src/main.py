@@ -9,6 +9,7 @@ def main():
     def launch_callback():
         username = app.get_username()
         version_id = app.get_selected_version()
+        minecraft_directory = app.get_minecraft_path()
 
         if not username:
             print("Please enter your name")
@@ -19,7 +20,7 @@ def main():
             version_id = choice(launcher.version_ids)
             print(f"Auto-selected version: {version_id}")
 
-        launcher.launch_minecraft(version_id, username)
+        launcher.launch_minecraft(version_id, username, minecraft_directory)
 
     # creating and start window app
     app = App(launch_callback)
