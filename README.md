@@ -7,7 +7,7 @@ you can save modifications and make your own builds with them.
 
 
 
-![Скриншот приложения](https://github.com/seronezP/chimera/src/images/chimeralauncher.png)
+![launcher screenshoot](https://github.com/seronezP/chimera/blob/master/src/images/chimeralauncher.png)
 
 ___
 
@@ -15,15 +15,25 @@ ___
 
 ___
 
-For start it now you should download this repository and start file "main.py" in any IDE. 
-For start playing, you should select minecraft version, enter your nickname and toogle "Launch".
+To run the launcher, first you need to make sure that you have Python version 3.13 installed, then you need to install the dependencies:
+
+`pip3 install customtkinter minecraft-launcher-lib `
+
+Next you can download this repository and open in any IDE. 
+Enter path to minecraft directory `MINECRAFT_DIRECTORY=''` in "launch_logic.py" file.
 
 
+Next you start file "main.py" waiting loading launcher select minecraft version, enter your nickname and toogle "Launch".
+
+p.s - you can enter any folder, but i recommend `.minecraft` folder in this repo.
 ___
 #### IMPORTANT
+___
 
-_WITHOUT ENTERED USERNAME MINECRAFT DONT START_
+_Without entered username minecraft dont start_
 
-_the launcher is still in a very early stage of development and there are many things missing from it_
+_If you dont enter minecraft folder path, miecraft will be installed in repository folder because its default minceraft foler_
 
-_since the launcher is **open source** you can participate in the development_
+_The launcher is still in a very early stage of development and there are many things missing from it_
+
+_Since the launcher is **open source** you can participate in the development_
