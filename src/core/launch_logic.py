@@ -3,7 +3,7 @@ import subprocess
 import threading
 
 # constants
-MINECRAFT_DIRECTORY = ''
+MINECRAFT_DIRECTORY = '/Users/stepanlukoyanov/seronez/chimera_laucnher/.minecraft'
 UUID = '1'
 
 class Launcher:
