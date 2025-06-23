@@ -7,9 +7,9 @@
 .minecraft/saves
 .minecraft/downloads
 .minecraft/options.txt
-.minecraft/command_history.txt
 .minecraft/servers.dat
 .minecraft/servers.dat_old
+.minecraft/command_history.txt
 .idea
 logs
 

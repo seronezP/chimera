@@ -7,10 +7,7 @@ you can save modifications and make your own builds with them.
 
 
 
-![CHIMERA LAUNCHER]([https://github.com/seronezP/chimera/src/images/chimeralauncher.png])
-
-
-
+![Скриншот приложения](https://github.com/seronezP/chimera/src/images/chimeralauncher.png)
 
 ___
 
@@ -21,8 +18,11 @@ ___
 For start it now you should download this repository and start file "main.py" in any IDE. 
 For start playing, you should select minecraft version, enter your nickname and toogle "Launch".
 
+
 ___
 #### IMPORTANT
+
+_WITHOUT ENTERED USERNAME MINECRAFT DONT START_
 
 _the launcher is still in a very early stage of development and there are many things missing from it_
 
