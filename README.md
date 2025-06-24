@@ -7,7 +7,7 @@ you can save modifications and make your own builds with them.
 
 
 
-![launcher screenshoot](https://github.com/seronezP/chimera/blob/master/src/images/chimeralauncher.png)
+![launcher screenshoot](https://github.com/seronezP/chimera/blob/master/images/chimeralauncher.png)
 
 ___
 
@@ -25,7 +25,7 @@ Lastly, select your Minecraft version, enter your nickname and click â€œLaunchâ€
 
 If you need to change default folder, open "settings" and enter your path.
 
-![settings screenshoot](https://github.com/seronezP/chimera/blob/master/src/images/settingsofchimera.png)
+![settings screenshoot](https://github.com/seronezP/chimera/blob/master/images/settingsofchimera.png)
 
 If you don't enter any custom minecraft folder path, miecraft will be installed in default folder. 
 

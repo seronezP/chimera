@@ -10,6 +10,9 @@
 .minecraft/servers.dat
 .minecraft/servers.dat_old
 .minecraft/command_history.txt
+setup.py
+dist
+build
 .idea
 logs
 

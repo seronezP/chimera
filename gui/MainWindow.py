@@ -1,7 +1,7 @@
 import customtkinter
 from customtkinter import CTkFrame
 import minecraft_launcher_lib
-from src.gui.SettingsGUI import SettingsGUI
+from gui.SettingsGUI import SettingsGUI
 
 class App:
     def __init__(self, launch_callback):
