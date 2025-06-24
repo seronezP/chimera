@@ -3,7 +3,7 @@ ___
 
 
 this is a open source launcher with full (or not -_-) customization, where 
-you can save modifications and make your own builds with them.
+you can(`not) save modifications and make your own builds with them.
 
 
 
@@ -23,11 +23,14 @@ Next you can download this repository and open in any IDE.
   
 Lastly, select your Minecraft version, enter your nickname and click “Launch”.
 
-If you need to change default folder, open "settings" and enter your path.
+If you need to change default folder or set theme, open "settings".
 
-![settings screenshoot](https://github.com/seronezP/chimera/blob/master/images/settingsofchimera.png)
+![settings dark](https://github.com/seronezP/chimera/blob/master/images/settingsdark.png)
 
-If you don't enter any custom minecraft folder path, miecraft will be installed in default folder. 
+![settings light](https://github.com/seronezP/chimera/blob/master/images/settingslightt.png)
+
+
+If you don't enter any custom minecraft folder path, miecraft will be installed in default folder.
 
 Default minecraft folders: on MacOs this folder is `users/user/library/Application Support/minecraft`, on windows `users/user/appdata/roaming/minecraft`.
 

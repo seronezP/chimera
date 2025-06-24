@@ -90,6 +90,7 @@ class SettingsGUI(CTkFrame):
         else:
             new_mode = "Dark"
         customtkinter.set_appearance_mode(new_mode)
+        customtkinter.set_default_color_theme("blue")
         # Обновляем тему, если нужно
         # например, перерисовываем виджеты vили меняем цвет фона
         self.update_idletasks()  # обновляет интерфейс
