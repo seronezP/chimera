@@ -1,6 +1,7 @@
 import customtkinter
 from customtkinter import CTkFrame
 
+new_mode = "Light"
 
 class SettingsGUI(CTkFrame):
     def __init__(self, parent, close_callback, current_path, width=500, height=300):
@@ -8,18 +9,36 @@ class SettingsGUI(CTkFrame):
         self.close_callback = close_callback
 
         # label settings
-        label = customtkinter.CTkLabel(
+        label_1 = customtkinter.CTkLabel(
             self,
             text="Settings",
         )
-        label.place(relx=0.09, rely=0.09, anchor="center")
+        label_1.place(relx=0.09, rely=0.09, anchor="center")
 
         # just a label
-        label = customtkinter.CTkLabel(
+        label_2 = customtkinter.CTkLabel(
             self,
             text="Enter your path to minecrfat directory: ",
         )
-        label.place(relx=0.30, rely=0.23, anchor="center")
+        label_2.place(relx=0.30, rely=0.23, anchor="center")
+
+        # Select theme
+        self.combobox_pityh = customtkinter.StringVar(value="Theme")
+        self.combobox = customtkinter.CTkComboBox(
+            self,
+            width=120,
+            height=30,
+            variable=self.combobox_pityh,
+            values=['Dark Theme', 'Light Theme']
+        )
+        self.combobox.place(x=30, y=160)
+
+        # just another label
+        label_3 = customtkinter.CTkLabel(
+            self,
+            text="Select Your Theme",
+        )
+        label_3.place(x=90, y=140, anchor="center")
 
         # user enter path to minecraft directory
         self.path_entry = customtkinter.CTkEntry(
@@ -29,7 +48,6 @@ class SettingsGUI(CTkFrame):
             height=30,
         )
         self.path_entry.place(x=180, y=100, anchor="center")
-
         # Insert current path
         self.path_entry.insert(0, current_path)
 
@@ -44,6 +62,17 @@ class SettingsGUI(CTkFrame):
         )
         button_ok.place(x=400, y=265, anchor="center")
 
+        # close settings button
+        button_theme_enter = customtkinter.CTkButton(
+            self,
+            text="Apply",
+            fg_color="#1a1a1a",
+            width=80,
+            height=30,
+            command=self.change_theme
+        )
+        button_theme_enter.place(x=200, y=175, anchor="center")
+
     def get_minecraft_path(self):
         """Get entered Minecraft path"""
         return self.path_entry.get().strip()
@@ -51,3 +80,17 @@ class SettingsGUI(CTkFrame):
     # func close settings
     def close_settings(self):
         self.close_callback()
+
+    def change_theme(self):
+        # Получаем текущий режим темы
+        self.input_mode = self.combobox_pityh.get()
+        # Переключаем на противоположный режим
+        if self.input_mode == "Light Theme":
+            new_mode = "Light"
+        else:
+            new_mode = "Dark"
+        customtkinter.set_appearance_mode(new_mode)
+        # Обновляем тему, если нужно
+        # например, перерисовываем виджеты vили меняем цвет фона
+        self.update_idletasks()  # обновляет интерфейс
+
