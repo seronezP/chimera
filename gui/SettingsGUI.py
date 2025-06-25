@@ -1,5 +1,6 @@
 import customtkinter
 from customtkinter import CTkFrame
+import subprocess
 
 new_mode = "Light"
 
@@ -63,6 +64,17 @@ class SettingsGUI(CTkFrame):
         button_ok.place(x=400, y=265, anchor="center")
 
         # close settings button
+        button_open_folder = customtkinter.CTkButton(
+            self,
+            text="Open Folder",
+            fg_color="#1a1a1a",
+            width=100,
+            height=30,
+            command=self.open_folder
+        )
+        button_open_folder.place(x=390, y=100, anchor="center")
+
+        # close settings button
         button_theme_enter = customtkinter.CTkButton(
             self,
             text="Apply",
@@ -81,17 +93,23 @@ class SettingsGUI(CTkFrame):
     def close_settings(self):
         self.close_callback()
 
+    # open folder .minecraft
+    def open_folder(self):
+        try:
+            subprocess.run(["open", self.get_minecraft_path()], check=True)
+        except subprocess.CalledProcessError as e:
+            print(f"error with open folder: {e}")
+
     def change_theme(self):
-        # Получаем текущий режим темы
         self.input_mode = self.combobox_pityh.get()
-        # Переключаем на противоположный режим
+        # turn theme
         if self.input_mode == "Light Theme":
             new_mode = "Light"
         else:
             new_mode = "Dark"
         customtkinter.set_appearance_mode(new_mode)
         customtkinter.set_default_color_theme("blue")
-        # Обновляем тему, если нужно
-        # например, перерисовываем виджеты vили меняем цвет фона
-        self.update_idletasks()  # обновляет интерфейс
+        # update theme
+        self.update_idletasks()
+
 

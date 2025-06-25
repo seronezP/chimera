@@ -25,9 +25,9 @@ Lastly, select your Minecraft version, enter your nickname and click â€œLaunchâ€
 
 If you need to change default folder or set theme, open "settings".
 
-![settings dark](https://github.com/seronezP/chimera/blob/master/images/settingsdark.png)
+![settings dark](https://github.com/seronezP/chimera/blob/master/images/settings_dark.png)
 
-![settings light](https://github.com/seronezP/chimera/blob/master/images/settingslightt.png)
+![settings light](https://github.com/seronezP/chimera/blob/master/images/settings_light.png)
 
 
 If you don't enter any custom minecraft folder path, miecraft will be installed in default folder.
