@@ -29,7 +29,6 @@ If you need to change default folder or set theme, open "settings".
 
 ![settings light](https://github.com/seronezP/chimera/blob/master/images/settings_light.png)
 
-
 If you don't enter any custom minecraft folder path, miecraft will be installed in default folder.
 
 Default minecraft folders: on MacOs this folder is `users/user/library/Application Support/minecraft`, on windows `users/user/appdata/roaming/minecraft`.
@@ -38,6 +37,9 @@ Default minecraft folders: on MacOs this folder is `users/user/library/Applicati
 ___
 #### IMPORTANT
 ___
+
+_BUTTON "Open folder" NOW IS ONLY FOR (idn, Button "open folder" cant change your minecraft path folder but with this button
+you can open your minecraft folder for copy your path to change him lol:P)._
 
 _Without entered username minecraft dont start_
 
