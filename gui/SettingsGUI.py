@@ -4,8 +4,10 @@ import subprocess
 
 new_mode = "Light"
 
+
 class SettingsGUI(CTkFrame):
     def __init__(self, parent, close_callback, current_path, width=500, height=300):
+        self.input_mode = None
         super().__init__(parent, width=width, height=height)
         self.close_callback = close_callback
 
@@ -14,7 +16,7 @@ class SettingsGUI(CTkFrame):
             self,
             text="Settings",
         )
-        label_1.place(relx=0.09, rely=0.09, anchor="center")
+        label_1.place(relx=0.09, rely=0.07, anchor="center")
 
         # just a label
         label_2 = customtkinter.CTkLabel(
@@ -30,7 +32,7 @@ class SettingsGUI(CTkFrame):
             width=120,
             height=30,
             variable=self.combobox_pityh,
-            values=['Dark Theme', 'Light Theme']
+            values=["Dark Theme", "Light Theme"],
         )
         self.combobox.place(x=30, y=160)
 
@@ -59,7 +61,7 @@ class SettingsGUI(CTkFrame):
             fg_color="#1a1a1a",
             width=100,
             height=30,
-            command=self.close_settings
+            command=self.close_settings,
         )
         button_ok.place(x=400, y=265, anchor="center")
 
@@ -70,7 +72,7 @@ class SettingsGUI(CTkFrame):
             fg_color="#1a1a1a",
             width=100,
             height=30,
-            command=self.open_folder
+            command=self.open_folder,
         )
         button_open_folder.place(x=390, y=100, anchor="center")
 
@@ -81,7 +83,7 @@ class SettingsGUI(CTkFrame):
             fg_color="#1a1a1a",
             width=80,
             height=30,
-            command=self.change_theme
+            command=self.change_theme,
         )
         button_theme_enter.place(x=200, y=175, anchor="center")
 
@@ -111,5 +113,3 @@ class SettingsGUI(CTkFrame):
         customtkinter.set_default_color_theme("blue")
         # update theme
         self.update_idletasks()
-
-

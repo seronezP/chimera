@@ -2,7 +2,7 @@
 ___
 
 
-this is a open source launcher with full (or not -_-) customization, where 
+this is a open source launcher with full (or not -_-) customization, where
 you can(`not) save modifications and make your own builds with them.
 
 
@@ -19,8 +19,8 @@ To run the launcher, first you need to make sure that you have Python version 3.
 
 `pip3 install customtkinter minecraft-launcher-lib `
 
-Next you can download this repository and open in any IDE. 
-  
+Next you can download this repository and open in any IDE.
+
 Lastly, select your Minecraft version, enter your nickname and click “Launch”.
 
 If you need to change default folder or set theme, open "settings".
@@ -38,7 +38,7 @@ ___
 #### IMPORTANT
 ___
 
-_BUTTON "Open folder" NOW IS ONLY FOR (idn, Button "open folder" cant change your minecraft path folder but with this button
+_BUTTON "Open folder" NOW IS ONLY FOR (idk, Button "open folder" cant change your minecraft path folder but with this button
 you can open your minecraft folder for copy your path to change him lol:P)._
 
 _Without entered username minecraft dont start_

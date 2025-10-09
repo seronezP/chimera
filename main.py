@@ -2,6 +2,7 @@ from gui.MainWindow import App
 from core.launch_logic import Launcher
 from random import choice
 
+
 def main():
     launcher = Launcher()
 
@@ -26,6 +27,7 @@ def main():
     app = App(launch_callback)
     app.set_version_options(launcher.version_ids)
     app.run()
+
 
 if __name__ == "__main__":
     main()
