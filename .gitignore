@@ -10,7 +10,7 @@
 .minecraft/servers.dat
 .minecraft/servers.dat_old
 .minecraft/command_history.txt
-.gitgnore
+.gitignore
 setup.py
 dist
 build
